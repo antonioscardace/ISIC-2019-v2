@@ -94,5 +94,5 @@ Then, you can use any notebook in [/notebooks/](/notebooks/).
 
 ## Credits
 
-Author: _[Antonio Scardace](https://linktr.ee/antonioscardace)_.<br/>
+Author: [Antonio Scardace](https://linktr.ee/antonioscardace).<br/>
 You can find them in [/docs/credits.txt](/docs/credits.txt).
