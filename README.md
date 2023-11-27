@@ -25,7 +25,7 @@ The dataset has been downloaded from [Kaggle](https://www.kaggle.com/datasets/an
 * Vascular lesion _(VASC)_ **(1.00%)**
 * Dermatofibroma _(DF)_ **(0.94%)**
 
-Specifically, I have focused my attention just on the tumours' images. Thus, I analysed **19,080 images** among 5 different diagnostic categories among the cited above: 
+Specifically, I focused my attention just on the tumours' images. Thus, I analysed **19,080 images** among 5 different diagnostic categories among the cited above: 
 * Melanocytic nevus _(NV)_ **(55.72%)**
 * Melanoma _(MEL)_ **(22.78%)**
 * Basal cell carcinoma _(BCC)_ **(17.01%)**
@@ -94,4 +94,5 @@ Then, you can use any notebook in [/notebooks/](/notebooks/).
 
 ## Credits
 
+Author: _[Antonio Scardace](https://linktr.ee/antonioscardace)_.<br/>
 You can find them in [/docs/credits.txt](/docs/credits.txt).
