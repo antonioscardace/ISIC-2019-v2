@@ -11,38 +11,38 @@ class SkinClassifierNet(nn.Module):
         
         self.feature_extractor = nn.Sequential(
             #Conv1
-            nn.Conv2d(input_channels, 32, 7, padding=3), #Input: 64 x 64 x 3. Output: 64 x 64 x 32 
+            nn.Conv2d(input_channels, 32, 3, padding='same'), #Input: 64 x 64 x 3. Output: 64 x 64 x 32 
             nn.MaxPool2d(2), #Input: 64 x 64 x 32. Output: 32 x 32 x 32
             nn.ReLU(),
 
             #Conv2
             nn.BatchNorm2d(32),
-            nn.Conv2d(32, 64, 3, padding=1), #Input: 32 x 32 x 32. Output: 32 x 32 x 64
+            nn.Conv2d(32, 64, 3, padding='same'), #Input: 32 x 32 x 32. Output: 32 x 32 x 64
             nn.MaxPool2d(2), #Input: 32 x 32 x 64. Output: 16 x 16 x 64
             nn.ReLU(),
 
             #Conv3
             nn.BatchNorm2d(64),
-            nn.Conv2d(64, 128, 3, padding=1), #Input: 16 x 16 x 64. Output: 16 x 16 x 128
-            nn.MaxPool2d(2), #Input: 16 x 16 x 128. Output: 8 x 8 x 128
+            nn.Conv2d(64, 128, 3, padding='same'), #Input: 16 x 16 x 64. Output: 16 x 16 x 128
+            nn.MaxPool2d(3), #Input: 16 x 16 x 128. Output: 8 x 8 x 128
             nn.ReLU(),
             
             #Conv4
             nn.BatchNorm2d(128),
-            nn.Conv2d(128, 256, 3, padding=1), #Input: 8 x 8 x 128. Output: 8 x 8 x 256
-            nn.MaxPool2d(2), #Input: 8 x 8 x 256. Output: 4 x 4 x 256
+            nn.Conv2d(128, 256, 3, padding='same'), #Input: 8 x 8 x 128. Output: 8 x 8 x 256
+            nn.MaxPool2d(5), #Input: 8 x 8 x 256. Output: 4 x 4 x 256
             nn.ReLU()
         )
 
         self.classifier = nn.Sequential(
             #FC5
-            nn.Dropout(),
+            nn.Dropout(0.5),
             nn.BatchNorm1d(4096),
             nn.Linear(4096, 2048), 
             nn.ReLU(),
             
             #FC6
-            nn.Dropout(),
+            nn.Dropout(0.5),
             nn.BatchNorm1d(2048),
             nn.Linear(2048, 1024),
             nn.ReLU(),
