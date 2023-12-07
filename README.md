@@ -59,8 +59,7 @@ The project structure is designed as follows:
 The Dataset was divided into a Training Set **(85%)**, and a Test Set **(15%)**.<br/>
 I did Data Augmentation on the Training Set to improve the model performance.
 
-I implemented a CNN composed of 4 Convolutional Layers and 3 Fully Connected Layers. To reduce the overfitting risk, I used Dropout layers before the first two FC layers. Batch Normalization is also used before each layer, except the last, to accelerate the model convergence.<br/>
-To improve the model performance, I had to choose two essential components. As a loss function, I used the Cross-Entropy function. Instead, as an optimizer, I used the Stochastic Gradient Descent (SGD), which is computationally much less expensive than the typical Gradient Descent.
+I implemented a CNN composed of 4 Convolutional Layers and 3 Fully Connected Layers. To reduce the overfitting risk, I used Dropout layers before the first two FC layers. Batch Normalization is also used before each layer, except the last, to accelerate the model convergence.
 
 The final model has an accuracy of **78.41%** on the Test Set.<br/>
 Anyway, the most significant class, Malignant Tumors, is the most precise (**88.57%**).
