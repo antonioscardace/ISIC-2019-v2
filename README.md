@@ -29,7 +29,7 @@ Specifically, I focused my attention just on the tumours' images. Thus, I analys
 * Squamous cell carcinoma _(SCC)_ **(03.26%)**
 * Dermatofibroma _(DF)_ **(01.23%)**
 
-As a first version of the project, I can classify the images as just "**Benign Tumors**" or "**Malignant Tumors**".<br/>
+As a first version of the project, I can classify the images as just **Benign Tumors** or **Malignant Tumors**.<br/>
 *NV* and *DF* are classified as Benign Tumors. The others are classified as Malignant Tumors.
 
 ## Project Structure
@@ -47,8 +47,7 @@ The project structure is designed as follows:
 ├── /src/model/       # Classes to define the CNN, train and test the model.
 ├── /src/utils/       # Classes to help the project development.
 ├── /models/          # Trained and serialised model files.
-├── /notebooks/       # Notebooks users use to build the dataset and train/test the model.
-└── settings.yml      # Configuration file.
+└── /notebooks/       # Notebooks users use to build the dataset and train/test the model.
 ```
 
 ## Machine Learning
