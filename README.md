@@ -1,6 +1,7 @@
 # ISIC-2019-v2 | Skin Tumors Classification
 
-_Personal Machine Learning Project_
+_Personal Machine Learning Project_<br/>
+_[Antonio Scardace](https://linktr.ee/antonioscardace)_ @ _Dept of Math and Computer Science, University of Catania_
 
 [![CodeFactor](https://www.codefactor.io/repository/github/antonioscardace/ISIC-2019-v2/badge/main)](https://www.codefactor.io/repository/github/antonioscardace/ISIC-2019-v2/overview/main)
 [![License](https://img.shields.io/github/license/antonioscardace/ISIC-2019-v2.svg)](https://github.com/antonioscardace/ISIC-2019-v2/blob/master/LICENSE)
@@ -89,5 +90,4 @@ Then, you can use any notebook in [/notebooks/](/notebooks/).
 
 ## Credits
 
-Author: [Antonio Scardace](https://linktr.ee/antonioscardace).<br/>
 You can find them in [/docs/credits.txt](/docs/credits.txt).
