@@ -1,10 +1,6 @@
 # ISIC-2019-v2 | Skin Tumors Classification
 
-_Personal Machine Learning Project to Practice the Following Skills:_
-* Knowledge of Machine Learning concepts
-* Knowledge of CNNs
-* Knowledge of Pytorch and Torchvision
-* Knowledge of Python and Jupyter Notebooks
+_Personal Machine Learning Project_
 
 [![CodeFactor](https://www.codefactor.io/repository/github/antonioscardace/ISIC-2019-v2/badge/main)](https://www.codefactor.io/repository/github/antonioscardace/ISIC-2019-v2/overview/main)
 [![License](https://img.shields.io/github/license/antonioscardace/ISIC-2019-v2.svg)](https://github.com/antonioscardace/ISIC-2019-v2/blob/master/LICENSE)
@@ -35,7 +31,7 @@ Specifically, I focused my attention just on the tumours' images. Thus, I analys
 As a first version of the project, I can classify the images as just "**Benign Tumors**" or "**Malignant Tumors**".<br/>
 *NV* and *DF* are classified as Benign Tumors. The others are classified as Malignant Tumors.
 
-## Structure
+## Project Structure
 
 The project structure is designed as follows:
 
@@ -49,8 +45,8 @@ The project structure is designed as follows:
 ├── /src/data/        # Classes to define and work with the dataset.
 ├── /src/model/       # Classes to define the CNN, train and test the model.
 ├── /src/utils/       # Classes to help the project development.
-├── /models/          # Trained and serialized models' files.
-├── /notebooks/       # Notebooks that users use to build the dataset and train/test the model.
+├── /models/          # Trained and serialised model files.
+├── /notebooks/       # Notebooks users use to build the dataset and train/test the model.
 └── settings.yml      # Configuration file.
 ```
 
@@ -59,10 +55,10 @@ The project structure is designed as follows:
 The Dataset was divided into a Training Set **(85%)**, and a Test Set **(15%)**.<br/>
 I did Data Augmentation on the Training Set to improve the model performance.
 
-I implemented a CNN composed of 4 Convolutional Layers and 3 Fully Connected Layers. To reduce the overfitting risk, I used Dropout layers before the first two FC layers. Batch Normalization is also used before each layer, except the last, to accelerate the model convergence.
+I implemented a CNN composed of 4 Convolutional Layers and 3 Fully Connected Layers. To reduce the overfitting risk, I used Dropout layers before the first two FC layers. Batch-Normalization is also used before each layer, except the last, to accelerate the model convergence.
 
 The final model has an accuracy of **78.41%** on the Test Set.<br/>
-Anyway, the most significant class, Malignant Tumors, is the most precise (**88.57%**).
+However, the most significant class, Malignant Tumors, is the most precise: **88.57%**.
 
 <img src="docs/images/cmatrix.png" alt="Test Confusion Matrix"/>
 
