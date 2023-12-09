@@ -5,6 +5,7 @@ _[Antonio Scardace](https://linktr.ee/antonioscardace)_ @ _Dept of Math and Comp
 
 [![CodeFactor](https://www.codefactor.io/repository/github/antonioscardace/ISIC-2019-v2/badge/main)](https://www.codefactor.io/repository/github/antonioscardace/ISIC-2019-v2/overview/main)
 [![License](https://img.shields.io/github/license/antonioscardace/ISIC-2019-v2.svg)](https://github.com/antonioscardace/ISIC-2019-v2/blob/master/LICENSE)
+[![Open Issues](https://img.shields.io/github/issues/antonioscardace/isic-2019-v2.svg?maxAge=2592000)](https://github.com/antonioscardace/isic-2019-v2/issues)
 
 ## Introduction
 
@@ -17,24 +18,19 @@ The dataset has been downloaded from [Kaggle](https://www.kaggle.com/datasets/an
 * Melanoma _(MEL)_ **(17.85%)**
 * Basal cell carcinoma _(BCC)_ **(13.12%)**
 * Benign keratosis (solar lentigo / seborrheic keratosis / lichen planus-like keratosis) _(BKL)_ **(10.36%)**
-* Actinic keratosis _(AK)_ **(3.42%)**
-* Squamous cell carcinoma _(SCC)_ **(2.48%)**
-* Vascular lesion _(VASC)_ **(1.00%)**
+* Actinic keratosis _(AK)_ **(03.42%)**
+* Squamous cell carcinoma _(SCC)_ **(02.48%)**
+* Vascular lesion _(VASC)_ **(01.00%)**
 * Dermatofibroma _(DF)_ **(0.94%)**
 
-Specifically, I focused my attention just on the tumours' images. Thus, I analysed **19,080 images** among 5 different diagnostic categories among the cited above: 
-* Melanocytic nevus _(NV)_ **(55.72%)**
-* Melanoma _(MEL)_ **(22.78%)**
-* Basal cell carcinoma _(BCC)_ **(17.01%)**
-* Squamous cell carcinoma _(SCC)_ **(03.26%)**
-* Dermatofibroma _(DF)_ **(01.23%)**
-
-As a first version of the project, I can classify the images as just **Benign Tumors** or **Malignant Tumors**.<br/>
-*NV* and *DF* are classified as Benign Tumors. The others are classified as Malignant Tumors.
+Specifically, I focused my attention just on the tumours' images. Thus, I analysed **19,080 images** among 5 different diagnostic categories among the cited above. As a first version of the project, I can classify the images as **Benign Tumors** or **Malignant Tumors**. They are divided as follows: 
+* Melanocytic nevus _(NV)_ **(55.72%)** - _(BENIGN)_
+* Melanoma _(MEL)_ **(22.78%)** - _(MALIGNANT)_
+* Basal cell carcinoma _(BCC)_ **(17.01%)** - _(MALIGNANT)_
+* Squamous cell carcinoma _(SCC)_ **(03.26%)** - _(MALIGNANT)_
+* Dermatofibroma _(DF)_ **(01.23%)** - _(BENIGN)_
 
 ## Project Structure
-
-The project structure is designed as follows:
 
 ```
 .
@@ -46,7 +42,7 @@ The project structure is designed as follows:
 ├── /src/data/        # Classes to define and work with the dataset.
 ├── /src/model/       # Classes to define the CNN, train and test the model.
 ├── /src/utils/       # Classes to help the project development.
-├── /models/          # Trained and serialised model files.
+├── /models/          # Serialized files of the trained model.
 └── /notebooks/       # Notebooks users use to build the dataset and train/test the model.
 ```
 
@@ -70,13 +66,13 @@ However, the most significant class, Malignant Tumors, is the most precise: **88
 
 So that the repository is successfully cloned and the project runs smoothly, a few steps need to be followed.
 
-### Requisites
+#### Requisites
 
 * A good amount of cores (GPU is better) and RAM.
 * Free disk space (> 10GB) is required.
 * ``anaconda``, ``pytorch``, and ``torchvision`` are required.
 
-### Installation and Use
+#### Installation and Use
 
 ```sh
    $ git clone https://github.com/antonioscardace/ISIC-2019-v2.git
