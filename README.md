@@ -5,7 +5,7 @@ _[Antonio Scardace](https://linktr.ee/antonioscardace)_ @ _Dept of Math and Comp
 
 [![CodeFactor](https://www.codefactor.io/repository/github/antonioscardace/ISIC-2019-v2/badge/main)](https://www.codefactor.io/repository/github/antonioscardace/ISIC-2019-v2/overview/main)
 [![License](https://img.shields.io/github/license/antonioscardace/ISIC-2019-v2.svg)](https://github.com/antonioscardace/ISIC-2019-v2/blob/master/LICENSE)
-[![Open Issues](https://img.shields.io/github/issues/antonioscardace/isic-2019-v2.svg?maxAge=2592000)](https://github.com/antonioscardace/isic-2019-v2/issues)
+[![Open Issues](https://img.shields.io/github/issues/antonioscardace/isic-2019-v2.svg)](https://github.com/antonioscardace/isic-2019-v2/issues)
 
 ## Introduction
 
@@ -58,21 +58,15 @@ However, the most significant class, Malignant Tumors, is the most precise: **88
 
 <img src="docs/images/cmatrix.png" alt="Test Confusion Matrix"/>
 
-## Demo Example
-
-<img src="docs/snaps/demo.png" alt="Demo"/>
-
 ## Getting Started
 
-So that the repository is successfully cloned and the project runs smoothly, a few steps need to be followed.
-
-#### Requisites
+So that the repository is successfully cloned and the project runs, there are a few prerequisites:
 
 * A good amount of cores (GPU is better) and RAM.
 * Free disk space (> 10GB) is required.
 * ``anaconda``, ``pytorch``, and ``torchvision`` are required.
 
-#### Installation and Use
+Next, the repository can be cloned.
 
 ```sh
    $ git clone https://github.com/antonioscardace/ISIC-2019-v2.git
@@ -80,8 +74,8 @@ So that the repository is successfully cloned and the project runs smoothly, a f
    $ mkdir models
 ``` 
 
-Now download the dataset from [Kaggle](https://www.kaggle.com/datasets/andrewmvd/isic-2019) and put images in [/data/images/](/data/images/). <br/>
-Then, you can use any notebook in [/notebooks/](/notebooks/).
+Now, download the dataset from [Kaggle](https://www.kaggle.com/datasets/andrewmvd/isic-2019) and put the images in [/data/images/](/data/images/). <br/>
+So, you can use any notebook in [/notebooks/](/notebooks/).
 
 ## Credits
 
