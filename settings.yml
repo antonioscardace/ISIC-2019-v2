@@ -1,0 +1,27 @@
+version: '3'
+
+#-------------------------#
+# Paths must be absolute. #
+#-------------------------#
+
+paths:
+  images: '/YOUR_PATH/ISIC-2019-v2/data/images/'
+
+  metadata_csv: '/YOUR_PATH/ISIC-2019-v2/data/raw/ISIC_2019_Training_Metadata.csv'
+  ground_truth_csv: '/YOUR_PATH/ISIC-2019-v2/data/raw/ISIC_2019_Training_GroundTruth.csv'
+  
+  merged_dataset_csv: '/YOUR_PATH/ISIC-2019-v2/data/interim/ISIC_2019_dataset_merged.csv'
+  clean_dataset_csv: '/YOUR_PATH/ISIC-2019-v2/data/interim/ISIC_2019_dataset_clean.csv'
+  
+  training_csv: '/YOUR_PATH/ISIC-2019-v2/data/processed/ISIC_2019_dataset_train.csv'
+  test_csv: '/YOUR_PATH/ISIC-2019-v2/data/processed/ISIC_2019_dataset_test.csv'
+
+  model: '/YOUR_PATH/ISIC-2019-v2/models/checkpoint.pth'
+
+params:
+  batch_size: 128
+  num_epochs: 50
+  num_workers: 6
+
+  learning_rate: 0.005
+  momentum: 0.9
