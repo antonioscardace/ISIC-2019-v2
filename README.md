@@ -1,4 +1,4 @@
-# ISIC-2019-v2 | Skin Tumors Classification
+# Skin Tumors Classification
 
 _Personal Machine Learning Project_<br/>
 _[Antonio Scardace](https://linktr.ee/antonioscardace)_ @ _Dept of Math and Computer Science, University of Catania_
